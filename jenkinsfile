@@ -16,7 +16,7 @@ node {
       } else {
          bat(/"${mvnHome}\bin\mvn" -B sonar:sonar/)
       }
-
+   }
    stage('Build') {
       // Run the maven build
       withEnv(["MVN_HOME=$mvnHome"]) {
